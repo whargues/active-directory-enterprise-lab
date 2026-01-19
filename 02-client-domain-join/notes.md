@@ -20,7 +20,6 @@
 ## Validate Domain Identity on Client
 - Logged into the domain from the client machine
 - Ran `whoami` in PowerShell to confirm domain context
-- Example output: `testdomain\wyatt` (or similar)
 - Screenshot: `screenshots/whoami-domain.png`
 
 ## Join Second Client (If Applicable)
