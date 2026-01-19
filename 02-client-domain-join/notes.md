@@ -22,7 +22,7 @@
 - Ran `whoami` in PowerShell to confirm domain context
 - Screenshot: `screenshots/whoami-domain.png`
 
-## Join Second Client (If Applicable)
+## Join Second Client
 - Repeated domain join process for second machine
 - Verified second computer object appears in ADUC
 - Screenshot: `screenshots/aduc-second-client.png`
