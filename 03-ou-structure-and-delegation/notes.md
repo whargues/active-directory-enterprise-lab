@@ -38,5 +38,14 @@
 
 ## Validate Delegation
 - Logged in as a delegated admin
+- Screenshots: `screenshots/delegation-validation1.png`
 - Verified ability to manage only their department’s users
-- Screenshots: `screenshots/delegation-validation.png`
+- Screenshots: `screenshots/delegation-validation2.png`
+- Verified that delegated admin was able to create user in assigned OU
+- Screenshots: `screenshots/delegation-validation3.png`
+- Successful Creation of User
+- Screenshots: `screenshots/delegation-validation4.png`
+- Tried to create additional user in seperate OU and was denied due to delegated privileges on specific OU
+- Screenshots: `screenshots/delegation-validation5.png`
+- Showcasing User Buddy Love is part of group that has delegated control over specific OU
+- Screenshots: `screenshots/delegation-validation6.png`
