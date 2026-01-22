@@ -18,7 +18,7 @@
 
 ## Create default wallpaper GPO to manage uniformity across all users
 - Craeated new GPO: "Hospital_Standard_Wallpaper"
-- Screenshot: `screenshots/Standard_Wallpaper.png`
+- Screenshot: `screenshots/Hospital_Standard_Wallpaper_GPO.png`
 - Saved Wallpaper png file to SYSVOL folder so all users can access file through GPO and allow replication to other Domain Controllers
 - Screenshot: `screenshots/SYSVOL_Standard_Wallpaper.png`
 - Configured policies for GPO Standard Wallpaper and mapped path to Standard_Wallpaper location
