@@ -1,13 +1,15 @@
 # Group Policy — Notes
 
-## 1. Review Existing Default GPOs
+##  Review Existing Default GPOs
 - Viewed Default Domain Policy and Default Domain Controllers Policy
 - Confirmed no modifications were made
-- Screenshot: `screenshots/default-gpos.png`
 
-## 2. Create Baseline GPO
-- Created new GPO: `Baseline-Workstation`
-- Configured core settings (e.g., password policy, audit policy, Windows Update settings)
+## Create Baseline GPO
+- Created new GPO: `Domain_Logon_Banner`
+- Screenshot: `screenshots/default-gpos.png`
+- Configured Logon Title to display to users when attempting to access login screen
+- Screenshot: `screenshots/GPO_Logon_Title_Display`
+- 
 - Linked to the domain root or Workstations OU
 - Screenshot: `screenshots/baseline-gpo-created.png`
 
