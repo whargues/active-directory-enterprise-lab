@@ -9,9 +9,12 @@
 - Screenshot: `screenshots/default-gpos.png`
 - Configured Logon Title to display to users when attempting to access login screen
 - Screenshot: `screenshots/GPO_Logon_Title_Display`
-- 
-- Linked to the domain root or Workstations OU
-- Screenshot: `screenshots/baseline-gpo-created.png`
+- Configuured Interactive logon message to users attempting access login screen
+- Screenshot: `screenshots/GPO_Logon_Interactive_Message`
+- Linked to the GPO OU 
+- Screenshot: `screenshots/Domain_Logon_Banner_Link_to_GPO_OU`
+- Tested functionality of Domain Logon Banner after creation
+- Screenshot: `screenshots/Domain_Logon_Banner_Successful`
 
 ## 3. Create Department-Specific GPOs
 - Created GPOs for each department (e.g., IT-Workstation, HR-Workstation, Finance-Workstation)
