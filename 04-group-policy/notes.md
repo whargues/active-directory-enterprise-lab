@@ -16,8 +16,22 @@
 - Tested functionality of Domain Logon Banner after creation
 - Screenshot: `screenshots/Domain_Logon_Banner_Successful.png`
 
-## 3. Create Department-Specific GPOs
-- Created GPOs for each department (e.g., IT-Workstation, HR-Workstation, Finance-Workstation)
+## Create default wallpaper GPO to manage uniformity across all users
+- Craeated new GPO: "Hospital_Standard_Wallpaper"
+- Screenshot: `screenshots/Standard_Wallpaper.png`
+- Saved Wallpaper png file to SYSVOL folder so all users can access file through GPO and allow replication to other Domain Controllers
+- Screenshot: `screenshots/SYSVOL_Standard_Wallpaper.png`
+- Configured policies for GPO Standard Wallpaper and mapped path to Standard_Wallpaper location
+- Screenshot: `screenshots/Desktop_Wallpaper_Mapped_Path.png`
+- Linked new Default_Wallpaper GPO to the domain root to allow routing to all OU's
+- Screenshot: `screenshots/Hospital_Standard_Wallpaper_domain_root_link.png`
+- Applied "Hospital_Standard_Wallpaper" GPO through gpupdate /force and gpresult /r to see if the GPO was applied successfully
+- Screenshot: `screenshots/GPUpdate_GPresult.png`
+- Verified that the Desktop Wallpaper changed from original to linked Hospital_Standard_Wallpaper
+- Screenshots: `screenshots/Original_Wallpaper.png` `screenshots/Hospital_Standard_Wallpaper_Successful.png` 
+
+## Create Department-Specific GPOs
+- Created GPO for specificily Radiology Department to differentiate from default GPO Wallpaper that covers all other OUs.
 - Linked each GPO to its respective OU
 - Screenshot: `screenshots/department-gpos-created.png`
 
@@ -29,16 +43,6 @@
   - Software restrictions
 - Screenshot: `screenshots/department-gpo-settings.png`
 
-## 5. Link GPOs to OUs
-- Linked Baseline GPO to Workstations OU
-- Linked department GPOs to their department OUs
-- Screenshot: `screenshots/gpo-links.png`
-
-## 6. Enforce or Block Inheritance (If Applicable)
-- Enforced Baseline GPO
-- Blocked inheritance on specific OUs if needed
-- Screenshot: `screenshots/enforced-gpo.png`
-
 ## 7. Validate GPO Application on Clients
 - Ran `gpupdate /force`
 - Verified settings applied
@@ -48,13 +52,4 @@
 - Verified correct GPOs applied to each client
 - Screenshot: `screenshots/gpresult.png`
 
-## 9. Resultant Set of Policy (RSoP)
-- Generated RSoP report
-- Confirmed Baseline + Department GPOs applied
-- Screenshot: `screenshots/rsop.png`
-
-## 10. Validate Delegation
-- Confirmed department admins cannot modify global GPOs
-- Verified they can only manage GPOs linked to their department OUs
-- Screenshot: `screenshots/delegation-gpo.png`
 
