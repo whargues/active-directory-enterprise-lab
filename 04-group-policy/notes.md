@@ -21,7 +21,7 @@
 - Screenshot: `screenshots/Hospital_Standard_Wallpaper_GPO.png`
 - Saved Wallpaper png file to SYSVOL folder so all users can access file through GPO and allow replication to other Domain Controllers
 - Screenshot: `screenshots/SYSVOL_Standard_Wallpaper.png`
-- Configured policies for GPO Standard Wallpaper and mapped path to Standard_Wallpaper location
+- Configured policies for GPO Standard Wallpaper and mapped path to Hospital_Standard_Wallpaper location
 - Screenshot: `screenshots/Desktop_Wallpaper_Mapped_Path.png`
 - Linked new Default_Wallpaper GPO to the domain root to allow routing to all OU's
 - Screenshot: `screenshots/Hospital_Standard_Wallpaper_domain_root_link.png`
@@ -31,10 +31,19 @@
 - Screenshots: `screenshots/Original_Wallpaper.png` `screenshots/Hospital_Standard_Wallpaper_Successful.png` 
 
 ## Create Department-Specific GPOs
-- Created GPO for specificily Radiology Department to differentiate from default GPO Wallpaper that covers all other OUs.
-- Linked each GPO to its respective OU
-- Screenshot: `screenshots/department-gpos-created.png`
-
+- Created GPO for specificily Radiology Department to differentiate from default Hospital_Standard_Wallpaper GPO that covers all other OUs.
+- Screenshot: `screenshots/Radiology_Desktop_Banner_GPO.png`
+- Saved Wallpaper png file to SYSVOL folder so all users can access file through GPO and allow replication to other Domain Controllers
+- Screenhot: `screenshots/SYSVOL_Radiology_Banner.png`
+- Configured policies for GPO Standard Wallpaper and mapped path to Radiology_Desktop_Banner location
+- Screenshot: `screenshots/Radiology_Wallpaper_Mapped_Path.png`
+- Linked GPO to its respective OU (Radiology)
+- Screenshot: `screenshots/OU_GPO_Link.png`
+- Ran Powershell Command "whoami"to verify user is part of different OU (IT)
+- Screenshot: `IT_User.png`
+- Ran Powershell Command "whoami" to verify user is part of the Radiology OU and ensured that Desktop Wallpaper changed to specific GPO that was linked to Radiology OU
+- Screenshot: `Radiology_User_Successful.png`
+  
 ## 4. Configure Department Policies
 - Applied settings such as:
   - Desktop wallpaper
