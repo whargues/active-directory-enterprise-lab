@@ -5,16 +5,16 @@
 - Confirmed no modifications were made
 
 ## Create Baseline GPO
-- Created new GPO: `Domain_Logon_Banner`
+- Created new GPO: "Domain_Logon_Banner"
 - Screenshot: `screenshots/default-gpos.png`
 - Configured Logon Title to display to users when attempting to access login screen
-- Screenshot: `screenshots/GPO_Logon_Title_Display`
+- Screenshot: `screenshots/GPO_Logon_Title_Display.png`
 - Configuured Interactive logon message to users attempting access login screen
-- Screenshot: `screenshots/GPO_Logon_Interactive_Message`
+- Screenshot: `screenshots/GPO_Logon_Interactive_Message.png`
 - Linked to the GPO OU 
-- Screenshot: `screenshots/Domain_Logon_Banner_Link_to_GPO_OU`
+- Screenshot: `screenshots/Domain_Logon_Banner_Link_to_GPO_OU.png`
 - Tested functionality of Domain Logon Banner after creation
-- Screenshot: `screenshots/Domain_Logon_Banner_Successful`
+- Screenshot: `screenshots/Domain_Logon_Banner_Successful.png`
 
 ## 3. Create Department-Specific GPOs
 - Created GPOs for each department (e.g., IT-Workstation, HR-Workstation, Finance-Workstation)
