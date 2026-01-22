@@ -39,6 +39,8 @@
 - Screenshot: `screenshots/Radiology_Wallpaper_Mapped_Path.png`
 - Linked GPO to its respective OU (Radiology)
 - Screenshot: `screenshots/OU_GPO_Link.png`
+- Linked specific Group to GPO to limit least privledge on who can edit GPO (Radiology_Admins)
+- Screenshot: `screenshots/Group_Link_Radiology_GPO.png`
 - Ran Powershell Command "whoami"to verify user is part of different OU (IT)
 - Screenshot: `IT_User.png`
 - Ran Powershell Command "whoami" to verify user is part of the Radiology OU and ensured that Desktop Wallpaper changed to specific GPO that was linked to Radiology OU
