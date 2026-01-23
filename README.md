@@ -11,32 +11,29 @@ A fully documented enterprise Active Directory lab built to demonstrate identity
 - Configured domain/forest functional levels
 - Verified replication and core AD DS health
 
-### **02 — DNS Configuration**
-- Created forward and reverse lookup zones
-- Added A and PTR records
-- Validated name resolution across the domain
+### **02 — Client Domain Join**
+- ### **02 - Client Domain Join**
+- Deployed Windows 10/11 client VM in same virtual network
+- Configured DNS to point to domain controller
+- Joined client to domain `testdomain.local`
+- Verified domain membership and trust relationship
+- Confirmed GPO application and user login functionality
+- Captured screenshots of domain join and post-login state
 
 ### **03 — OU Structure & Design**
 - Built a clean, scalable OU hierarchy
 - Separated Users, Computers, and Departments
 - Followed enterprise naming conventions
-
-### **04 — User & Group Management**
-- Created user accounts with proper UPN suffixes
-- Built security groups for departments and roles
-- Implemented group nesting and role-based access patterns
-
-### **05 — RBAC & Delegated Administration**
 - Created custom admin groups
 - Delegated OU-specific permissions using least privilege
 - Documented delegated rights and verification steps
 
-### **06 — Group Policy Configuration**
+### **04 — Group Policy**
 - Created and linked GPOs for departments
 - Implemented BGInfo/branding, security baselines, and login policies
 - Verified GPO application using gpresult and event logs
 
-### **07 — Hybrid Identity Preparation**
+### **05 — Hybrid Identity Preparation**
 - Added custom UPN suffix for Entra ID
 - Installed and registered the Entra Cloud Sync agent
 - Created gMSA for directory access
