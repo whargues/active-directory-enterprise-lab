@@ -43,15 +43,3 @@
 - Verified no synced users appear yet (pre‑sync state)
 - Screenshot: `screenshots/entra-no-users-yet.png`
 
-
-
-
-
-###edit
-## 6. Confirm Cloud Sync Status in Entra
-- Opened Microsoft Entra admin center → Cloud Sync → Configurations
-- Verified sync configuration for domain: `testdomain.local`
-- Sync direction: AD → Microsoft Entra ID
-- Status: Disabled (sync has not run yet)
-- Screenshot: `screenshots/cloud-sync-config-status.png`
-
