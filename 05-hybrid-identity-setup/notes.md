@@ -12,7 +12,7 @@
 - Valid sAMAccountName
 - Screenshot: `screenshots/user-upn-updated.png`
 
-## 3. Install Entra Connect
+## Install Entra Connect
 - Launched Entra Connect installer on domain-joined server
 - Selected Customize setup depending on environment
 - Screenshot: `screenshots/entra-connect-install.png`
